@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+*{
+	scrollbar-width: thin !important;
+}
+body{
+	font-family: 'Nanum Myeongjo', serif;
+	background-color: #E9EBEE !important;
+	position: relative;
+
+}
+a{
+	text-decoration: none !important;
+}
+header{
+	background: #194A72;
+}
+input.searchbox1{
+	width: 70vh !important;
+}
+ul.navmenu1 li{
+	margin-right: 5px;
+}
+li.active{
+	background: rgba(23, 162, 184, 0.3) !important;
+	border-radius: 5px !important;
+}
+ul.navmenu1 li:hover{
+	background: rgba(0, 54, 99, 0.4) !important;
+	border-radius: 5px !important;
+}
+ul.navmenu1 li a{
+	color: white !important;
+	font-weight: bold;
+	font-size: 15px;
+}
+ul.navmenu1 li a i{
+	position: relative;
+	font-size: 22px;
+	color: rgba(255, 255, 255, 0.9);
+}
+ul.navmenu1 li a span.badge{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+ul.navmenu1 li div.headerdrop ul li:hover{
+	background: rgba(23, 162, 184, 0.3) !important;
+}
+ul.navmenu2{
+	display: block;
+}
+ul.navmenu2 li{
+	float: left !important;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+ul.navmenu2 li:hover{
+	background: rgba(0, 54, 99, 0.4) !important;
+	border-radius: 5px !important;
+}
+ul.navmenu2 li a{
+	color: white !important;
+}
+div.headerdrop ul{
+	max-height: 30vh !important;
+	width: 450px;
+	overflow: auto;
+
+}
+div.headerdrop ul li{
+	display: block !important;
+	padding: 3px;
+}
+div.dropuser span.noticextra{
+	font-weight: normal;
+}
+div.dropinfo span{
+	font-size: 14px !important;
+	font-weight: normal;
+
+}
+/*popup message box*/
+div.popupmsg{
+	display: none;
+	width: 285px;
+	height: 345px;
+	position: fixed;
+	bottom: 0;
+	left: 200px;
+	z-index: 99;
+}
+div.msgtitle{
+	cursor: pointer;
+}
+span.closemsg{
+	cursor: pointer;
+}
+div.msgbody{
+	height: 230px;
+	width: 100%;
+	overflow: auto;
+}
+span.msgtxt1{
+	display: block;
+	line-height: normal;
+	font-size: 15px;
+	padding: 3px;
+	background: rgba(108, 117, 125, 0.2);
+}
+span.msgtxt2{
+	display: block;
+	line-height: normal;
+	font-size: 15px;
+	padding: 3px;
+	color: rgba(255, 255, 255, 0.9);
+	background: #0069D9;
+}
+form.popupmsgform{
+	position: relative;
+}
+form.popupmsgform input.msgtxt{
+	border: none;
+}
+form.popupmsgform button.msgbtn{
+	position: absolute;
+	top: 7px;
+	right: 0;
+	border: none;
+}
+/*profile*/
+ul.profilemenu{
+	display: block;
+}
+ul.profilemenu li{
+	float: left !important;
+	padding-left: 5px !important;
+	padding-right: 5px !important;
+}
+ul.profilemenu li a{
+	color: #17A2B8;
+	font-weight: bold;
+}
+
+/*body content*/
+div.leftbar{
+	position: relative;
+}
+li.lefttitle{
+	background: #17A2B8 !important;
+	font-weight:bold;
+}
+div.leftbar aside{
+	position: fixed;
+	overflow: auto;
+	height: 90vh;
+	width: 18%;
+	color: black;
+}
+/*content*/
+p.postuser{
+	font-weight: bold;
+	color: #17A2B8;
+}
+/*post comment*/
+div.cmtfeild{
+	display: none;
+}
+div.postreply{
+	display: none;
+}
+ul.cmtreply{
+	display: none;
+}
+span.react:hover{
+	background: #D3DAE3;
+	cursor: pointer;
+}
+div.rightbar{
+	position: relative;
+}
+li.righttitle{
+	background: #17A2B8 !important;
+	font-weight:bold;
+}
+div.rightbar aside{
+	position: fixed;
+	overflow: auto;
+	height: 90vh;
+	width: 19%;
+	color: black;
+}
+ul.aside-ul li{
+	color: black;
+}
+ul.aside-ul li:hover{
+	background: rgba(23, 162, 174, 0.4);
+}
+ul.aside-ul-right li:hover{
+	cursor: pointer;
+}
+li.righttitlehover:hover{
+	cursor: initial !important;	
+}
+
+
+/*messenger message*/
+div.messagewarp{
+	z-index: 1;
+}
+div.messagebody{
+	height: 60vh;
+	overflow: auto;
+}
+/*friends list*/
+ul.frndlist li{
+	list-style-type: none;
+}

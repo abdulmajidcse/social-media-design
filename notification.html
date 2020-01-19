@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Techbook || It's a media for Computer Students!</title>
+	<!--css file-->
+	<link rel="shortcut icon" type="image/png" href="images/brand.png">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"><!--end of css file-->
+</head>
+<body>
+
+<!--first header-->
+<header class="sticky-top d-lg-block d-none">
+	<!--first navbar-->
+	<nav class="navbar navbar-expand-lg navbar-light p-0">
+		<!--nav container-->
+		<div class="container">
+			<!--brand icon-->
+			<a class="navbar-brand" href="index.html">
+				<img src="images/brand.png" width="40" height="40" alt="">
+			</a><!--end of brand icon-->
+		    <!--nav menu-->
+		    <ul class="navbar-nav mr-auto navmenu1">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home <span class="sr-only">Home</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="profile.html"><img class="rounded-circle" src="images/pp2.jpg" width="30" height="30"> Profile</a>
+		      </li>
+		      <li class="nav-item dropdown">
+				<a class="nav-link" href="#" id="frnddrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-user-friends"></i><span class="badge badge-danger">6</span> <span class="sr-only">Friend</span>
+				</a>
+				<!--dropdown add friend-->
+				<div class="dropdown-menu headerdrop" aria-labelledby="frnddrop">
+
+					<p class="p-1 border-top border-bottom font-weight-bold">Friend Requests</p>
+
+						<ul class="list-group p-0 m-0">
+							<li><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp3.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>Govir Aronno</span>
+										</div>
+										<div class="dropinfo ml-3">
+											<form>
+												<button type="submit" name="accept" class="btn btn-outline-success">Accept</button>
+												<button type="submit" name="delete" class="btn btn-outline-danger">Delete</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</a></li>
+							<li><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>Nil Sopno</span>
+										</div>
+										<div class="dropinfo ml-3">
+											<form>
+												<button type="submit" name="accept" class="btn btn-outline-success">Accept</button>
+												<button type="submit" name="delete" class="btn btn-outline-danger">Delete</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+
+						<p class="p-1 border-top border-bottom  font-weight-bold">People You May Know</p>
+
+						<ul class="list-group p-0 m-0">
+							<li><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp3.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>Akash Nil</span>
+										</div>
+										<div class="dropinfo ml-3">
+											<form>
+												<button type="submit" name="accept" class="btn btn-outline-success">Add Friend</button>
+												<button type="submit" name="delete" class="btn btn-outline-danger">Cancel</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+
+						<p class="p-1 border-top font-weight-bold text-center"><a href="friends.html" style="color: #28A745 !important;">See More</a></p>
+
+				</div><!--end of dropdown message-->
+			  </li>
+		      <li class="nav-item dropdown">
+				<a class="nav-link" href="#" id="msgdrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fab fa-facebook-messenger"></i><span class="badge badge-danger">3</span> <span class="sr-only">Message</span>
+				</a>
+				<!--dropdown message-->
+				<div class="dropdown-menu headerdrop" aria-labelledby="msgdrop">
+						<ul class="list-group p-0 m-0">
+							<li onclick="popupmsgboxshow()"><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp2.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>Abdul Majid</span>
+										</div>
+										<div class="dropinfo ml-3">
+											<span>Kemon Acen?</span>
+										</div>
+									</div>
+								</div>
+							</a></li>
+							<li onclick="popupmsgboxshow()"><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp3.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>চাঁদের আলো</span>
+										</div>
+										<div class="dropinfo ml-3">
+											<span>কোথায় তুমি?</span>
+										</div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+				</div><!--end of dropdown message-->
+			  </li>
+		      <li class="nav-item dropdown">
+				<a class="nav-link" href="#" id="notificationdrop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-bell"></i><span class="badge badge-danger">5</span> <span class="sr-only">Notification</span>
+				</a>
+				<!--dropdown notification-->
+				<div class="dropdown-menu headerdrop" aria-labelledby="msgdrop">
+						<ul class="list-group p-0 m-0">
+							<li><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp2.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>Abdul Majid <span class="noticextra">commented on your post</span></span>
+										</div>
+										<div class="dropinfo ml-3">
+											<span>I am web developer!..</span>
+										</div>
+									</div>
+								</div>
+							</a></li>
+							<li><a href="#">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp.jpg" width="50" height="50"> 
+									</div>
+									<div class="col-10 p-0 text-dark mt-1 mb-1">
+										<div class="dropuser ml-3">
+											<span>Nil Sopno <span class="noticextra">commented on your post</span></span>
+										</div>
+										<div class="dropinfo ml-3">
+											<span>I am web developer!..</span>
+										</div>
+									</div>
+								</div>
+							</a></li>
+						</ul>
+				</div><!--end of dropdown notification-->
+			   </li>
+			   <li class="nav-item">
+		        <a class="nav-link" onclick="return confirm('Are you sure to signout?')" href="#"><i class="fas fa-sign-out-alt"></i> Signout <span class="sr-only">Signout</span></a>
+		      </li>
+		    </ul><!--end of nav menu-->
+		    <!--search box-->
+			<form class="form-inline my-2 my-lg-0">
+		      <input class="form-control mr-sm-2 searchbox1" type="search" placeholder="Search" aria-label="Search">
+		      <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+		    </form><!--end of search box-->
+		</div><!--end of nav container-->
+	</nav><!--end of first navbar-->
+</header><!--end of first header-->
+
+
+<!--pop up message box-->
+<div id="popupmsgbox" class="popupmsg border rounded-top border-primary bg-light">
+	<!--message title-->
+	<div class="msgtitle sticky-top badge-success">
+		<h6 onclick="popupmsgcollapse()" class="p-1 font-weight-bold"><img class="rounded-circle" src="images/pp.jpg" width="40" height="40">  <span>Nil Sopno</span> <span onclick="popupmsghide()" class="float-right mt-1 mr-2 p-1 closemsg"><i class="fas fa-times"></i></span></h6>
+	</div><!--end of message title-->
+	<!--message body-->
+	<div class="msgbody">
+		<!--first person message-->
+		<table class="table person1">
+			<tr>
+				<td><img class="rounded-circle ml-1" src="images/pp.jpg" width="30" height="30"></td>
+				<td><span class="msgtxt1 rounded">Hello! How are you?</span></td>
+			</tr>
+		</table><!--end of first person message-->
+		<!--second person message-->
+		<table class="table person2">
+			<tr>
+				<td><span class="msgtxt2 rounded">Hello! I'm a student of Kurigram Polytechnic Institute.</span></td>
+				<td><img class="rounded-circle ml-1" src="images/pp2.jpg" width="30" height="30"></td>
+			</tr>
+		</table><!--end of second person message-->
+		<!--second person message-->
+		<table class="table person2">
+			<tr>
+				<td><img src="images/post4.jpg" width="180" class="rounded"> <span class="msgtxt2 rounded">Ei pic ta dekho.</span></td>
+				<td><img class="rounded-circle ml-1" src="images/pp2.jpg" width="30" height="30"></td>
+			</tr>
+		</table><!--end of second person message-->
+	</div><!--end of message body-->
+	<!--message footer-->
+	<div class="msgfooter border">
+		<form class="popupmsgform">
+			<input type="text" name="msg" class="w-75 ml-2 msgtxt" placeholder="Type a message">
+			<button type="submit" name="send" class="msgbtn"><i class="fas fa-space-shuttle text-success" title="Send"></i></button>
+			<input type="file" name="photo" id="msgphoto" hidden="hidden">
+			<div>
+			<span id="custommsgphoto" class="h5 ml-2" style="cursor: pointer;"><i class="far fa-image" style="font-size: 25px;"></i> Photo</span> <span id="custommsgtxt" class="text-success"></span></div>
+		</form>
+	</div><!--end of message footer-->
+</div><!--end of pop up message box-->
+
+
+<!--second header-->
+<header class="d-lg-none d-block">
+	<!--second navbar-->
+	<nav class="navbar navbar-expand-lg p-0">
+		<div class="container">
+			<div class="row mt-2">
+				<div class="col-2">
+					<a class="navbar-brand" href="#">
+						<img src="images/brand.png" width="40" height="40" alt="">
+					</a>
+				</div>
+				<div class="col-10">
+					<!--search box-->
+					<form class="form-inline mt-2" style="position: relative;">
+		     		 <input class="form-control mr-sm-2 searchbox2" type="search" placeholder="Search" aria-label="Search">
+		     		 <button class="btn btn-outline-info my-2 my-sm-0" type="submit" style="position: absolute;right: 0;"><i class="fas fa-search"></i></button>
+		    		</form><!--end of search box-->
+				</div>
+			</div>
+		</div>
+		<div class="container">
+		    <ul class="navbar-nav navmenu2">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Profile</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">People</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Friend <span class="badge badge-danger">5</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Message <span class="badge badge-danger">3</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Notification <span class="badge badge-danger">5</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Logout</a>
+		      </li>
+		    </ul>
+		</div>
+	</nav><!--end of second navbar-->
+</header><!--end of second header-->
+
+<!--body content-->
+<div class="container mt-3">
+	<!--content row-->
+	<div class="row">
+		<!--div left sidebar-->
+		<div class="col-3 d-none d-lg-block leftbar">
+			<!--left sidebar-->
+			<aside>
+				<div class="row">
+					<div class="col-12 mb-4">
+						<ul class="list-group aside-ul">
+							<li class="list-group-item lefttitle">Your Profile</li>
+							<a href="profile.html"><li class="list-group-item"><img src="images/pp2.jpg" class="rounded-circle" width="35" height="35"> Abdul Majid</li></a>
+							<a href="messenger.html"><li class="list-group-item"><i class="fab fa-facebook-messenger" style="font-size: 26px; color: #17A2B8;"></i> Messenger</li></a>
+							<li class="list-group-item">Total Post <span class="badge badge-success">20</span></li>
+							<li class="list-group-item">Ranking Position <span class="badge badge-success">3</span></li>
+						</ul>
+						<p class="mt-4 p-2 mr-auto">Techbook &copy; 2019</p>
+					</div>
+				</div>
+			</aside><!--end of left sidebar-->
+		</div><!--end of div left sidebar-->
+
+		<!--div section-->
+		<div class="col-lg-6 col-12">
+			<!--section-->
+			<section class="post-section">
+
+				<!--artilce-->
+				<article class="shadow border rounded bg-light p-2 mb-2 post-article" style="border-color: rgba(40, 41, 35, 0.2) !important;">
+					<!--post user-->
+					<ul class="list-group p-0 m-0">
+							<li class="list-group-item m-0 p-0" style="border: none;"><a href="#">
+								<div class="row m-0">
+									<div class="col-md-2 col-12">
+										<img class="rounded-circle" src="images/pp2.jpg" width="60" height="60"> 
+									</div>
+									<div class="col-md-8 col-12 p-0 text-dark mt-1 mb-1">
+										<p class="postuser m-0 mb-1">Abdul Majid</p>
+										<p class="small font-italic">September 4, 2019, 11:24 AM</p>
+									</div>
+								</div>
+							</a></li>
+					</ul><!--end of post user-->
+					<!--post article paragraph-->
+					<p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p><!--end of post article paragraph-->
+					<!--post article image-->
+					<img src="images/post4.jpg" class="w-100"><!--post article image-->
+					<!--post article love and comment reaction-->
+					<div class="post-comment p-2 mt-3 border-top border-bottom">
+						<span class="p-2 text-dark react"><i class="fas fa-heart text-danger"></i> Loves <span class="badge badge-success">14</span></span>
+						<span class="p-2 text-dark react"><i class="far fa-comment-alt"></i> Comments <span class="badge badge-success">8</span></span>
+					</div><!--end of post article love and comment reaction-->
+					<!--post article coment section-->
+					<div class="p-2 mt-3">
+						<!--post comment user-->
+						<ul class="list-group p-0 m-0">
+							<li class="list-group-item m-0 p-0" style="border: none;">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp3.jpg" width="35" height="35"> 
+									</div>
+									<div class="col-10 p-0">
+										<form class="form-inline ml-md-0 ml-3">
+											<input type="text" name="comment" class="form-control w-100" placeholder="Write a comment..." style="border-radius: 20px;">
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul><!--end of post comment user-->
+					</div><!--end of post article coment section-->
+
+					<!--post article coment reply section-->
+					<div class="p-2 mt-3 border-top border-bottom">
+						<!--post comment details user-->
+						<ul class="list-group p-0 m-0">
+							<li class="list-group-item m-0 p-0" style="border: none;">
+								<div class="row m-0">
+									<div class="col-md-2 col-12">
+										<img class="rounded-circle" src="images/pp.jpg" width="35" height="35"> 
+									</div>
+									<div class="col-md-10 col-12 p-0">
+										<p class="m-0 ml-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+										<p class="ml-1">
+											<span class="react p-2"><i class="far fa-thumbs-up"></i> like <span class="badge badge-success">8</span></span> 
+											<span onclick="cmtReply()" class="react p-2"><i class="fas fa-reply"></i> reply</span>
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul><!--end of post comment details user-->
+						<!--post comment reply user-->
+						<ul class="list-group p-0 m-0 ml-5">
+							<li class="list-group-item m-0 p-0" style="border: none;">
+								<div class="row m-0">
+									<div class="col-md-2 col-12">
+										<img class="rounded-circle" src="images/pp2.jpg" width="35" height="35"> 
+									</div>
+									<div class="col-md-10 col-12 p-0">
+										<p class="m-0 ml-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+										<p class="ml-1">
+											<span class="react p-2"><i class="far fa-thumbs-up"></i> like <span class="badge badge-success">8</span></span> 
+											<span onclick="cmtReply()" class="react p-2"><i class="fas fa-reply"></i> reply</span>
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul><!--end of post comment reply user-->
+						<!--post comment reply box user-->
+						<ul id="cmtreply" class="cmtreply list-group p-0 m-0 mt-2 ml-5">
+							<li class="list-group-item m-0 p-0" style="border: none;">
+								<div class="row m-0">
+									<div class="col-2">
+										<img class="rounded-circle" src="images/pp3.jpg" width="35" height="35"> 
+									</div>
+									<div class="col-10 p-0">
+										<form class="form-inline ml-md-0 ml-3">
+											<input type="text" name="comment" class="form-control w-100" placeholder="Write a reply..." style="border-radius: 20px;">
+										</form>
+									</div>
+								</div>
+							</li>
+						</ul><!--end of post comment reply box user-->
+					</div><!--end of post article coment reply section-->
+				</article><!--end of artilce-->
+
+			</section><!--end of section-->
+		</div><!--end of div section-->
+
+		<!--div right sidebar-->
+		<div class="col-3 d-none d-lg-block rightbar">
+			<!--right sidebar-->
+			<aside>
+				<div class="row">
+					<div class="col-12 mb-4">
+						<ul class="list-group aside-ul aside-ul-right float-right">
+							<li class="list-group-item righttitle righttitlehover">People List</li>
+							<li class="list-group-item righttitlehover">
+								<form>
+									<input type="text" class="form-control" name="" placeholder="Search">
+								</form>
+							</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp.jpg" class="rounded-circle" width="35" height="35"> Nil Sopno</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp2.jpg" class="rounded-circle" width="35" height="35"> Akash Nil</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp3.jpg" class="rounded-circle" width="35" height="35"> Akash Choya</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp.jpg" class="rounded-circle" width="35" height="35"> Nil Sopno</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp2.jpg" class="rounded-circle" width="35" height="35"> Akash Nil</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp3.jpg" class="rounded-circle" width="35" height="35"> Akash Choya</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp.jpg" class="rounded-circle" width="35" height="35"> Nil Sopno</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp2.jpg" class="rounded-circle" width="35" height="35"> Akash Nil</li>
+							<li onclick="rightpopupmsgshow()" class="list-group-item"><img src="images/pp3.jpg" class="rounded-circle" width="35" height="35"> Akash Choya</li>
+						</ul>
+					</div>
+				</div>
+			</aside><!--end of right sidebar-->
+		</div><!--end of div right sidebar-->
+	</div><!--end of content row-->
+</div><!--end of body content-->
+
+<!--js file-->
+<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/style.js"></script><!--end of js file-->
+</body>
+</html>
